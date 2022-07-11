@@ -1,50 +1,48 @@
 const quotes = [
-
   {
-    quote: "You should never regret anything in life. If it’s good, it’s wonderful. If it’s bad, it is experience.",
-    copyright: "Lifehack",
+  quote: 'I never dreamed about success, I worked for it',
+  author: 'Estee Lauder'
   },
   {
-    quote: "Falling down is an accident, staying down is a choice.",
-    copyright: "Lifehack",
+  quote: 'Do not try to be original, just try to be good.',
+  author: 'Paul Rand'
   },
   {
-    quote: "Always believe that something wonderful is about to happen.",
-    copyright: "Lifehack",
+  quote: 'Do not be afraid to give up the good to go for the great',
+  author: 'John D. Rockefeller'
   },
   {
-    quote: "Don’t be afraid to give up the good and go for great.",
-    copyright: "Lifehack",
+  quote: 'If you cannot fly then run. If you cannot run, then walk. And if you cannot walk, then crawl, but whatever you do, you have to keep moving forward.',
+  author: 'Martin Luther King Jr.'
   },
   {
-    quote: "Never apologize for having high standards, people who really want to be in your life will rise to meet them.",
-    copyright: "Lifehack",
+  quote: 'Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time.',
+  author: 'Thomas Edison'
   },
   {
-    quote: "If it doesn’t challenge you, it won’t change you.",
-    copyright: "Lifehack",
+  quote: 'The fastest way to change yourself is to hang out with people who are already the way you want to be',
+  author: 'REid Hoffman'
   },
   {
-    quote: "A hill is just another opportunity to leave your competition behind.",
-    copyright: "Lifehack",
+  quote: 'Money is like gasoline during a road trip. You do not want to run out of gas on your trip, but you are not doing a tour of gas stations',
+  author: 'Tim O Reilly'
   },
   {
-    quote: "Stop being afraid of what could go wrong and think of what could go right.",
-    copyright: "Lifehack",
+  quote: 'Some people dream of success, while other people get up every morning and make it happen',
+  author: 'Wayne Huizenga'
   },
   {
-    quote: "Never give up on a dream just because of the time it will take to accomplish it, time will pass anyway.",
-    copyright: "Lifehack",
+  quote: 'The only thing worse than starting something and falling.. is not starting something',
+  author: 'SEth Godin'
   },
   {
-    quote: "Don’t fear failure. Fear being in the exact same place next year as you are today.",
-    copyright: "Lifehack",
-  }
-];
-
+  quote: 'If you really want to do something, you will find a way. If you do not, you will find an excuse.',
+  author: 'Jim Rohn'
+  },
+  ];
 const quote = document.querySelector("#quote span:first-child");
-const copyright = document.querySelector("#quote span:last-child");
+const author = document.querySelector("#quote span:last-child");
 
 const todaysQuote = quotes [Math.floor(Math.random() * quotes.length)];
 quote.innerText = todaysQuote.quote;
-copyright.innerText = todaysQuote.copyright;
+author.innerText = todaysQuote.author;
