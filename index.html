@@ -5,33 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap" rel="stylesheet">
-    
-
+    <link rel="stylesheet" href="https://use.typekit.net/ryx6tdx.css">
 </head>
 <body>
-    <h2 id="clock">00:00:00</h2>
+    <span class="js-temp"></span>
+    <span class="js-place"></span>
+
+    <h1 id="clock">00:00:00</h1>
     <form class="hidden" id="login-form">
         <input class="input" required maxlength="15" type="text" placeholder="Please Enter Username"/>
-        <input type="submit" value="Log In" />
+
     </form>
-    <h1 class="hidden" id ="greeting"></h1>
+    <h4 class="hidden" id ="greeting"></h4>
+    <h5>Let's make a To-Do List</h5>
     <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
+        <input type="text" placeholder="" required />
     </form>
     <ul id="todo-list">
 
-    </ul> 
-    <div id="quote" >
-        <span></span>
-        <span></span>
-    </div>
-    <div id="weather">
-        <span></span>
+    </ul>
+    <div id="quote" class="quotes">
+        <span></span><br>
         <span></span>
     </div>
+
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quote.js"></script>
